@@ -1,4 +1,4 @@
-osc(258)
+osc(34)
   .color(0.21,0.07,0.20)
   .rotate(0.10)
   .modulate(noise(1),()=>a.fft[1])
