@@ -1,0 +1,10 @@
+osc(258)
+  .color(0.21,0.07,0.20)
+  .rotate(0.10)
+  .modulate(noise(1),()=>a.fft[1])
+  .mult(shape(100,0.8,.05).scale(1,.5,1))
+  .pixelate(1000)
+  .blend(o0, 0.9)
+  .add(shape(4).scale(0.3).modulate(noise(1),()=>a.fft[1]).repeat(3,3))
+  
+  .out(o0)
